@@ -74,3 +74,9 @@ var hello = "Hell to World";
 /*var a;     // этот код не работает
 a = 20;*/
 //var c=null;  этот код не работает
+
+Console.WriteLine( "*********************Console I/O*******************" );
+
+Console.Write( "Enter your name: " );
+string? userName = Console.ReadLine();
+Console.WriteLine($"Hello, {userName}");
