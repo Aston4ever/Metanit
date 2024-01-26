@@ -55,4 +55,22 @@ Console.WriteLine('\u0421');    // С
 Console.WriteLine("Компания \"Рога и копыта\""); // \ - escape ситмвол
 Console.WriteLine("Привет \nмир"); // управляющая последовательность в строке
 
-Console.WriteLine( "*********************Literals*******************" );
+Console.WriteLine( "*********************Types of data*******************" );
+
+string name = "Tom";
+int age = 33;
+bool isEmployed = false;
+double weight = 78.65;
+ 
+Console.WriteLine($"Имя: {name}");  // интерполяция
+Console.WriteLine($"Возраст: {age}");
+Console.WriteLine($"Вес: {weight}");
+Console.WriteLine($"Работает: {isEmployed}");
+
+//Неявная типизация
+var hello = "Hell to World";
+// hello = 123;  не может быть после сменен тип. 
+
+/*var a;     // этот код не работает
+a = 20;*/
+//var c=null;  этот код не работает
