@@ -129,3 +129,5 @@ Console.WriteLine( "********************* If else *******************" );
 if ( a > b ) { //нельзя неявно преобразовывать falsy values. if (null) - ошибка
     Console.WriteLine( "Hello World" );  
 }
+int t = x < y ? (x+y) : (x-y); // тернарный оператор
+Console.WriteLine(z);   
