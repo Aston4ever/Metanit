@@ -123,3 +123,9 @@ Console.WriteLine( "********************* Boolean logic *******************" );
 bool x5 = (5 > 6) ^ (4 < 6); // 5 > 6 - false, 4 < 6 - true, поэтому возвращается true
 bool x6 = (50 > 6) ^ (4 / 2 < 3); // 50 > 6 - true, 4/2 < 3 - true, поэтому возвращается false
  */
+ 
+Console.WriteLine( "********************* If else *******************" );
+
+if ( a > b ) { //нельзя неявно преобразовывать falsy values. if (null) - ошибка
+    Console.WriteLine( "Hello World" );  
+}
