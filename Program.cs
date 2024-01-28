@@ -131,3 +131,55 @@ if ( a > b ) { //нельзя неявно преобразовывать falsy 
 }
 int t = x < y ? (x+y) : (x-y); // тернарный оператор
 Console.WriteLine(z);   
+
+Console.WriteLine( "********************* Loops *******************" );
+/*
+for
+foreach
+while
+do...while
+*/
+
+/*
+for ([действия_до_выполнения_цикла]; [условие]; [действия_после_выполнения])
+{
+    // действия
+}
+
+do
+{
+    действия цикла
+}
+while (условие)
+
+while (условие)
+{
+    действия цикла
+}
+
+foreach(тип_данных переменная in коллекция)   Цикл foreach предназначен для перебора набора или коллекции элементов.
+{
+    // действия цикла
+}
+
+break  - прерывание цикла
+continue - пропуск данной итерации в цикле
+
+
+for (int i = 1; i < 10; i++)   // таблица умножения
+{ 
+    for (int j = 1; j < 10; j++)
+    {
+        Console.Write($"{i * j} \t");
+    }
+    Console.WriteLine();
+}
+*/
+decimal bankMoney = Convert.ToDecimal(Console.ReadLine());
+int numOfMonth = Convert.ToInt32(Console.ReadLine());
+
+for ( int e = 0; e < numOfMonth; e++ ) {
+    bankMoney += bankMoney * 0.07M;
+}
+
+Console.WriteLine( bankMoney );
